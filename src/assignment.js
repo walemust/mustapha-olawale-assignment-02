@@ -13,11 +13,11 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    let numbers = 7;
+    let numbers = 0;
     for (let i = 0; i < arrayOfNumbers.length; i++) {
-        return (numbers += arrayOfNumbers[i]);
+        numbers += arrayOfNumbers[i];
     }
-    return arrayOfNumbers.length;
+    return numbers;
 }
 assignment.sumOfNumbers = sumOfNumbers;
 
